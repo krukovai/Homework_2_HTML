@@ -1,0 +1,68 @@
+<!--Сделать страницу с формой, в которой будут следующие
+виды элементов: текстовые поля ввода, многострочные
+поля ввода, чекбоксы, радио-баттоны, выпадающие списки
+с единичным и множественным выбором, кнопка-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <meta charset="UTF-8">
+    <title class="title_background">Горный Алтай</title>
+</head>
+<body>
+<div id="title_background">
+    <h1 class="header">Отдых в Горном Алтае</h1>
+    <h3 class="section text_color">Вид отдыха</h3>
+    <form action="index.html" method="post">
+        <label><input id="Активный_тур" checked="checked" type="radio" name="Вид_отдыха" value=" Активный_тур"> Активный
+            тур</label><br>
+        <label><input id="Отдых_на_базе" type="radio" name="Вид_отдыха" value="Отдых_на_базе"> Отдых на
+            базе</label><br/>
+        <label><input id="Комбинированный" type="radio" name="Вид_отдыха" value="Комбинированный">
+            Комбинированный</label><br/>
+        <h3 class="section text_color">Место отдыха <a href="table.html">(фотографии)</a></h3>
+        <select>
+            <option>Телецкое озеро</option>
+            <option>Каракольские озёра</option>
+            <option>Долина реки Чулышман</option>
+            <option>Подножие горы Белуха</option>
+            <option>Мультинские озёра</option>
+            <option>Река Катунь</option>
+        </select>
+        <br/>
+        <h3 class="section text_color">Вид активного отдыха</h3>
+        <select multiple="multiple">
+            <option>Сплав</option>
+            <option>Пешие маршруты</option>
+            <option>Конные маршруты</option>
+            <option>Подъем в горы</option>
+        </select>
+        <br/>
+        <h3 class="section text_color">Взять в прокат</h3>
+        <label><input id="Палатка_1_местная" type="checkbox" name="Взять_в_прокат"> Палатка 1-местная</label><br>
+        <label><input id="Палатка_2_местная" type="checkbox" name="Взять_в_прокат"> Палатка 2-местная</label><br>
+        <label><input id="Спальный_мешок" type="checkbox" name="Взять_в_прокат"> Спальный мешок</label><br>
+        <label><input id="Рюкзак" type="checkbox" name="Взять_в_прокат"> Рюкзак</label><br>
+        <label><input id="Пенополиуретановый_коврик" type="checkbox" name="Взять_в_прокат"> Пенополиуретановый
+            коврик</label>
+        <br/>
+        <br/>
+        <button id="Отправить_заявку" name="button1" value="Отправить_заявку">Отправить заявку</button>
+    </form>
+    <br/>
+    <h3 class="section text_color text_small">Задайте вопрос</h3>
+    <form action="/url" method="post">
+        <input id="textarea2" type="text" name="text2" placeholder="Введите текст">
+        <input id="Отправить_вопрос" type="submit" name="Отправить_вопрос" value="Отправить">
+        <input id="Очистить_вопрос" type="reset" name="Очистить_вопрос" value="Очистить">
+    </form>
+    <br/>
+    <h3 class="section text_color text_small">Напишите пожелания по вопросу предоставления услуг</h3>
+    <form action="/url" method="post">
+        <p><textarea id="textarea1" name="text1" placeholder="Введите текст"></textarea><br/>
+            <input id="Отправить_пожелания" type="submit" name="Отправить_пожелания" value="Отправить">
+            <input id="Очистить_пожелания" type="reset" name="Очистить_пожелания" value="Очистить">
+    </form>
+</div>
+</body>
+</html>

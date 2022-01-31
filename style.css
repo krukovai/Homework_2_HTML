@@ -1,0 +1,46 @@
+.title_background {
+background-size: initial;
+background-color: blue;
+}
+/*------------------------------------*/
+#title_background{
+  width: 1600px;
+  height: 1200px;
+  background-color: LightYellow;
+}
+/*------------------------------------*/
+.header {
+ font-size: 32px;
+ font-weight: bold;
+ color: green;
+}
+/*------------------------------------*/
+.section {
+ font-size: 24px;
+ font-weight: bold;
+}
+/*------------------------------------*/
+.text_color { color: green}
+/*------------------------------------*/
+.text_small {
+font-size: 18px;
+}
+/*------------------------------------*/
+a {
+font-size: 18px;
+color: DarkBlue;
+font-weight: normal
+}
+/*------------------------------------*/
+.border {
+background-color: Cornsilk;
+font-size: 24px;
+font-weight: bold;
+color: SaddleBrown;
+display: table;
+margin-right: auto;
+border: 5px solid SaddleBrown;
+padding: 1px;
+width: 1200px;
+height: 500px;
+}
