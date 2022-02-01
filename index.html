@@ -13,55 +13,58 @@
 <div id="title_background">
     <h1 class="header">Отдых в Горном Алтае</h1>
     <h3 class="section text_color">Вид отдыха</h3>
-    <form action="index.html" method="post">
-        <label><input id="Активный_тур" checked="checked" type="radio" name="Вид_отдыха" value=" Активный_тур"> Активный
-            тур</label><br>
-        <label><input id="Отдых_на_базе" type="radio" name="Вид_отдыха" value="Отдых_на_базе"> Отдых на
+    <form id="send_request" action="index.html" method="post">
+        <label><input id="active_tour" checked="checked" type="radio" name="rest_type" value="active_tour"
+                      form="send_request"> Активный
+            тур</label><br/>
+        <label><input id="base" type="radio" name="rest_type" value="base" form="send_request"> Отдых на
             базе</label><br/>
-        <label><input id="Комбинированный" type="radio" name="Вид_отдыха" value="Комбинированный">
+        <label><input id="combined" type="radio" name="rest_type" value="combined" form="send_request">
             Комбинированный</label><br/>
         <h3 class="section text_color">Место отдыха <a href="table.html">(фотографии)</a></h3>
-        <select>
-            <option>Телецкое озеро</option>
-            <option>Каракольские озёра</option>
-            <option>Долина реки Чулышман</option>
-            <option>Подножие горы Белуха</option>
-            <option>Мультинские озёра</option>
-            <option>Река Катунь</option>
+        <select name="place">
+            <option value="tel">Телецкое озеро</option>
+            <option value="kar">Каракольские озёра</option>
+            <option value="chu">Долина реки Чулышман</option>
+            <option value="bel">Подножие горы Белуха</option>
+            <option value="mul">Мультинские озёра</option>
+            <option value="kat">Река Катунь</option>
         </select>
         <br/>
         <h3 class="section text_color">Вид активного отдыха</h3>
-        <select multiple="multiple">
-            <option>Сплав</option>
-            <option>Пешие маршруты</option>
-            <option>Конные маршруты</option>
-            <option>Подъем в горы</option>
+        <select name="type" multiple>
+            <option value="raft">Сплав</option>
+            <option value="foot">Пешие маршруты</option>
+            <option value="horse">Конные маршруты</option>
+            <option value="mount">Подъем в горы</option>
         </select>
         <br/>
         <h3 class="section text_color">Взять в прокат</h3>
-        <label><input id="Палатка_1_местная" type="checkbox" name="Взять_в_прокат"> Палатка 1-местная</label><br>
-        <label><input id="Палатка_2_местная" type="checkbox" name="Взять_в_прокат"> Палатка 2-местная</label><br>
-        <label><input id="Спальный_мешок" type="checkbox" name="Взять_в_прокат"> Спальный мешок</label><br>
-        <label><input id="Рюкзак" type="checkbox" name="Взять_в_прокат"> Рюкзак</label><br>
-        <label><input id="Пенополиуретановый_коврик" type="checkbox" name="Взять_в_прокат"> Пенополиуретановый
+        <label><input id="tent_1" type="checkbox" name="rent" value="a1"> Палатка 1-местная</label><br>
+        <label><input id="tent_2" type="checkbox" name="rent" value="a2"> Палатка 2-местная</label><br>
+        <label><input id="sleeping_bag" type="checkbox" name="rent" value="a3"> Спальный мешок</label><br>
+        <label><input id="backpack" type="checkbox" name="rent" value="a4"> Рюкзак</label><br>
+        <label><input id="mat" type="checkbox" name="rent" value="a5"> Пенополиуретановый
             коврик</label>
         <br/>
         <br/>
-        <button id="Отправить_заявку" name="button1" value="Отправить_заявку">Отправить заявку</button>
+        <button type="submit" name="submit_button" value="main_button">Отправить заявку</button>
+
+        <!--<button id="Отправить_заявку" name="button1">Отправить заявку</button>-->
     </form>
     <br/>
     <h3 class="section text_color text_small">Задайте вопрос</h3>
-    <form action="/url" method="post">
-        <input id="textarea2" type="text" name="text2" placeholder="Введите текст">
-        <input id="Отправить_вопрос" type="submit" name="Отправить_вопрос" value="Отправить">
-        <input id="Очистить_вопрос" type="reset" name="Очистить_вопрос" value="Очистить">
+    <form action="index.html" method="post">
+        <textarea id="textarea2" name="text2" placeholder="Введите текст"></textarea><br/>
+        <input id="send_question" type="submit" name="send_question" value="Отправить">
+        <input id="clear_question" type="reset" name="clear_question" value="Очистить">
     </form>
     <br/>
     <h3 class="section text_color text_small">Напишите пожелания по вопросу предоставления услуг</h3>
-    <form action="/url" method="post">
-        <p><textarea id="textarea1" name="text1" placeholder="Введите текст"></textarea><br/>
-            <input id="Отправить_пожелания" type="submit" name="Отправить_пожелания" value="Отправить">
-            <input id="Очистить_пожелания" type="reset" name="Очистить_пожелания" value="Очистить">
+    <form action="index.html" method="post">
+        <textarea id="textarea1" name="text1" placeholder="Введите текст"></textarea><br/>
+        <input id="send_wish" type="submit" name="send_wish" value="Отправить">
+        <input id="clear_wish" type="reset" name="clear_wish" value="Очистить">
     </form>
 </div>
 </body>
